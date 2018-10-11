@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import classes from './Layout.module.css'
 import Toolbar from '../Navigation/Toolbar/Toolbar'
@@ -11,5 +12,9 @@ const layout = (props) => (
     </main>
   </>
 )
+
+layout.propTypes = {
+  children: PropTypes.object,
+}
 
 export default layout
